@@ -1,5 +1,5 @@
 import os, json, requests
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
 
