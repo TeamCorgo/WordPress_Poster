@@ -3,10 +3,10 @@ from flask import Flask, request, jsonify
 from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
 
-# Manual set env keys to test with
-# os.environ["WP_URL"] = ''
-# os.environ["WP_Username"] = ''
-# os.environ["WP_Passowrd"] = ''
+# Manual set env keys to test with:
+#   os.environ["WP_URL"] = ''
+#   os.environ["WP_Username"] = ''
+#   os.environ["WP_Passowrd"] = ''
 
 app = Flask(__name__)
 @app.route('/json', methods = ['GET', 'POST'])
