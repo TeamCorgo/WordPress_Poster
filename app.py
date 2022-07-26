@@ -8,6 +8,7 @@ from wordpress_xmlrpc.methods.posts import NewPost
 #   os.environ["WP_Username"] = ''
 #   os.environ["WP_Passowrd"] = ''
 
+
 app = Flask(__name__)
 @app.route('/json', methods = ['GET', 'POST'])
 def receive():
