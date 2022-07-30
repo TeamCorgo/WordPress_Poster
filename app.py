@@ -47,8 +47,8 @@ def index():
             print('📝 Sent to blog to get posted')
         except:
             print('❗ Request to Wordpress Failed')
-        return
-    return
+        return 'Request Processed'
+    return 'Request Processed'
 
 if __name__ == '__main__':
     app.run(host= '0.0.0.0', debug=True, port=80)
